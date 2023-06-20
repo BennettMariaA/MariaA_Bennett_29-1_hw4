@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Список продуктов</title>
+</head>
+<body>
+    <h1>Список продуктов</h1>
+
+    {% for product in products %}
+        <div>
+            <img src="{{ https://ath2.unileverservices.com/wp-content/uploads/sites/8/2017/08/01133240/Sunsilk-Smooth-Manageable-Shampoo-new.jpg }}" alt="{{ sunsilk }}" width="200">
+            <h2>{{ product.name }}</h2>
+            <p>{{ product.description }}</p>
+            <a href="/product/{{ product.id }}">Подробнее</a>
+        </div>
+    {% endfor %}
+
+    <img src="{% static ' sunsilk.png' %}" alt="Логотип">
+</body>
+</html>
