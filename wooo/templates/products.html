@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>product1</title>
+    <title>Product List</title>
 </head>
 <body>
-    <h1>product2</h1>
+    <h1>Product List</h1>
 
-    {% for product in products %}
-        <div>
-            <img src="{{ https://ath2.unileverservices.com/wp-content/uploads/sites/8/2017/08/01133240/Sunsilk-Smooth-Manageable-Shampoo-new.jpg }}" alt="{{ sunsilk }}" width="200">
-            <h2>{{ product.name }}</h2>
-            <p>{{ product.description }}</p>
-            <a href="/product/{{ product1 }}">Подробнее</a>
-        </div>
-    {% endfor %}
+    <div>
+        <img src="{{ https://www.sunsilk.in/content/dam/unilever/sunsilk/india/pack_shot/8901030832420_01-34708277-png.png.ulenscale.460x460.png }}" alt="{{ sunsilk }}" width="200">
+        <h2>{{ sunsilk }}</h2>
+        <p>{{ womens shampoo }}</p>
+    </div>
 
-    <img src="{% static ' sunsilk.png' %}" alt="Логотип">
+    <img src="{% static 'shampoo.png' %}" alt="Logo">
 </body>
 </html>
